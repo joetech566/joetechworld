@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JOETECHWORLD — satellite installation guides, decoder setup, transponder references, and AI assistance.">
+  <title>JOETECHWORLD | Satellite Installation AI</title>
+  <style>
+    :root { --navy:#071a33; --blue:#1463d9; --cyan:#16b8c8; --ink:#172033; --muted:#64748b; --bg:#f4f7fb; --white:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+    header { background:linear-gradient(120deg,var(--navy),#103c75); color:white; padding:22px max(20px,calc((100% - 1120px)/2)); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:850; letter-spacing:.5px; font-size:1.3rem; }
+    .logo { width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--cyan),#fff);color:var(--navy);display:grid;place-items:center;font-weight:900; }
+    .tagline { margin:8px 0 0; color:#dbeafe; }
+    main { max-width:1120px; margin:auto; padding:28px 18px 48px; }
+    .hero { background:linear-gradient(120deg,#0b2850,#1463d9); color:white; padding:34px; border-radius:22px; box-shadow:0 12px 30px #0b285022; }
+    .hero h1 { font-size:clamp(2rem,4vw,3rem); line-height:1.1; margin:0 0 14px; }
+    .hero p { max-width:740px; color:#e3efff; margin:0 0 22px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:10px; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; border:0; border-radius:10px; padding:11px 16px; font-weight:750; text-decoration:none; cursor:pointer; }
+    .btn-light { background:white;color:#12315b; } .btn-outline { border:1px solid #ffffff8a;color:white;background:transparent; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin-top:22px; }
+    .card { background:white; border-radius:18px; padding:22px; box-shadow:0 5px 20px #12213b0b; border:1px solid #e5ebf4; }
+    .card h2 { margin:0 0 6px; font-size:1.3rem; } .sub { color:var(--muted); margin-top:0; }
+    .guide-link { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:15px; background:#f0f6ff; border:1px solid #dbeafe; border-radius:12px; margin-top:14px; }
+    .guide-link strong { display:block; } .guide-link small { color:var(--muted); }
+    .chat { display:flex; flex-direction:column; min-height:410px; }
+    #messages { flex:1; min-height:220px; max-height:390px; overflow:auto; border:1px solid #e2e8f0; border-radius:12px; padding:12px; background:#f8fafc; }
+    .msg { padding:10px 12px; margin:7px 0; border-radius:12px; max-width:94%; white-space:pre-wrap; overflow-wrap:anywhere; }
+    .bot { background:#e8f1ff; } .user { background:#d8f7ed; margin-left:auto; }
+    .chatform { display:flex; gap:8px; margin-top:12px; } .chatform input { min-width:0; flex:1; padding:13px; border:1px solid #cbd5e1; border-radius:10px; font:inherit; }
+    .btn-primary { background:var(--blue);color:white; } .hint { font-size:.85rem;color:var(--muted);margin:10px 0 0; }
+    .list { padding-left:20px; margin-bottom:0; } .list li { margin:6px 0; }
+    footer { background:#06152a;color:#cbd5e1;padding:24px 18px;text-align:center;font-size:.92rem; }
+    footer a { color:#fff; }
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding:25px 20px}.chatform{flex-direction:column}.chatform .btn{width:100%}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">JT</div><div>JOETECHWORLD<div style="font-size:.78rem;font-weight:500;color:#dbeafe">SATELLITE INSTALLATION AI</div></div></div>
+  <p class="tagline">Practical satellite setup help, decoder guides, and transponder reference.</p>
+</header>
+<main>
+  <section class="hero">
+    <h1>Install smarter.<br>Find your signal faster.</h1>
+    <p>Get step-by-step guidance for satellite dish alignment, LNB and decoder settings, transponder entry, signal quality, and channel scanning.</p>
+    <div class="buttons">
+      <a class="btn btn-light" href="#assistant">Ask the AI Assistant</a>
+      <a class="btn btn-outline" href="/JOETECHWORLD_Satellite_Installation_Guide.pdf" target="_blank" rel="noopener">Open Installation Guide (PDF)</a>
+    </div>
+  </section>
+  <section class="grid">
+    <article class="card">
+      <h2>📘 Installation Guide</h2>
+      <p class="sub">One combined guide based on the three reference pages provided.</p>
+      <div class="guide-link">
+        <div><strong>JOETECHWORLD Satellite Guide</strong><small>Decoder setup + transponder reference · PDF</small></div>
+        <a class="btn btn-primary" href="/JOETECHWORLD_Satellite_Installation_Guide.pdf" target="_blank" rel="noopener">View</a>
+      </div>
+      <h3>Included topics</h3>
+      <ul class="list">
+        <li>Master Decoder Type 2 setup</li><li>Newmax Combo setup</li>
+        <li>Transponder frequency, symbol rate, and polarity references</li>
+        <li>Signal quality and channel scanning workflow</li>
+      </ul>
+    </article>
+    <article class="card" id="assistant">
+      <h2>🤖 JOETECHWORLD AI Assistant</h2>
+      <p class="sub">Ask a satellite installation question in plain language.</p>
+      <div class="chat">
+        <div id="messages" aria-live="polite">
+          <div class="msg bot">Welcome to JOETECHWORLD! Ask me about decoder settings, dish alignment, LNB frequency, transponders, signal quality, or channel scanning.</div>
+        </div>
+        <form id="chatform" class="chatform">
+          <input id="question" autocomplete="off" placeholder="e.g. How do I set up a Newmax Combo?" aria-label="Your question" required>
+          <button class="btn btn-primary" id="send" type="submit">Ask AI</button>
+        </form>
+        <p class="hint">For accurate results, include your decoder model, satellite name, and location. Frequencies and channel availability can change; verify current parameters before installation.</p>
+      </div>
+    </article>
+  </section>
+  <section class="grid">
+    <article class="card">
+      <h2>🛰️ Basic setup checklist</h2>
+      <ol class="list">
+        <li>Secure the dish and point it toward the correct satellite orbital position for your location.</li>
+        <li>Connect the coaxial cable and select the correct LNB type/frequency.</li>
+        <li>Set DiSEqC correctly for your switch setup (Off/None only if no switch is used).</li>
+        <li>Add a valid transponder and watch signal quality while fine-tuning the dish.</li>
+        <li>Run a scan, save channels, and confirm reception.</li>
+      </ol>
+    </article>
+    <article class="card">
+      <h2>💬 Contact JOETECH</h2>
+      <p>Need personal installation help? Chat with JOETECH on WhatsApp.</p>
+      <a class="btn btn-primary" href="https://wa.me/233544132409" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <p class="hint">WhatsApp number configured from the project details: +233 544 132 409.</p>
+    </article>
+  </section>
+</main>
+<footer>© <span id="year"></span> JOETECHWORLD · Satellite installation guidance worldwide<br>Always follow local safety practices when installing dishes at height.</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const form = document.getElementById('chatform');
+  const input = document.getElementById('question');
+  const messages = document.getElementById('messages');
+  const send = document.getElementById('send');
+  function addMessage(text, who) {
+    const div = document.createElement('div');
+    div.className = 'msg ' + who;
+    div.textContent = text;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+    return div;
+  }
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const question = input.value.trim();
+    if (!question) return;
+    addMessage(question, 'user');
+    input.value = '';
+    send.disabled = true; send.textContent = 'Thinking…';
+    const pending = addMessage('Checking the satellite guide…', 'bot');
+    try {
+      const response = await fetch('/.netlify/functions/assistant', {
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ question })
+      });
+      const data = await response.json();
+      pending.textContent = data.answer || data.error || 'I could not get an answer. Please try again.';
+    } catch (error) {
+      pending.textContent = 'The AI service could not be reached. Please check the Netlify deployment and OPENAI_API_KEY environment variable.';
+    } finally {
+      send.disabled = false; send.textContent = 'Ask AI'; input.focus();
+    }
+  });
+</script>
+</body>
+</html>
